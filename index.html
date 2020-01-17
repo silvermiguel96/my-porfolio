@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Miguelangel RC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div id="app">
+    <v-app light>
+      <v-content>
+        <section>
+          <v-parallax src="assets/hero.jpg" height="800">
+            <v-layout column align-center justify-center class="white--text">
+              <img :src="profile.image" alt="Vuetify.js" class="img-radius" height="190">
+              <h1 class="white--text mb-2 display-1 text-center" v-text="profile.name"></h1>
+              <v-container>
+                <div class="title mb-4 text-center pa-4" v-text="profile.description"></div>
+                <v-layout d-flex align-center justify-center>
+                  <v-flex xs12 md12 d-flex justify-center>
+                    <v-btn class="mt-12 mx-1" color="green lighten-2" dark large target="_black"
+                      href="https://www.linkedin.com/in/miguelangel-rendon-cuartas-73850416b/">
+                      Linkedin
+                    </v-btn>
+                    <v-btn class="mt-12 mx-1" color="green lighten-2" dark large target="_black"
+                      href="https://github.com/silvermiguel96">
+                      GitHub
+                    </v-btn>
+                    <v-btn class="mt-12 mx-1" color="green lighten-2" dark large target="_black"
+                      href="https://twitter.com/silvermiguel96">
+                      Twitter
+                    </v-btn>
+                  </v-flex>
+              </v-container>
+            </v-layout>
+            </v-layout>
+          </v-parallax>
+        </section>
+
+        <section>
+          <v-layout column wrap class="my-12" align-center>
+            <v-flex xs12 sm4 class="my-4">
+              <div class="text-center">
+                <h2 class="headline">Portafolio</h2>
+              </div>
+            </v-flex>
+            <v-flex xs12>
+              <v-container grid-list-xl>
+                <v-layout row wrap align-center>
+                  <v-flex xs12 md4>
+                    <v-card flat class="transparent" height="500">
+                      <v-card-text class="text-center">
+                        <img src="/assets/salesavant.png" alt="Vuetify.js" height="200">
+                      </v-card-text>
+                      <v-card-title primary-title class="layout justify-center">
+                        <div class="headline text-center" v-text="porfolio1.name"></div>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio1.description">
+                      </v-card-text>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio1.tool">
+                      </v-card-text>
+                    </v-card>
+                  </v-flex>
+                  <v-flex xs12 md4>
+                    <v-card flat class="transparent" height="500">
+                      <v-card-text class="text-center">
+                        <img src="/assets/Tenndy.png" alt="Vuetify.js" height="200">
+                      </v-card-text>
+                      <v-card-title primary-title class="layout justify-center">
+                        <div class="headline text-center" v-text="porfolio2.name"></div>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio2.description">
+                      </v-card-text>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio2.tool">
+                      </v-card-text>
+                    </v-card>
+                  </v-flex>
+                  <v-flex xs12 md4>
+                    <v-card flat class="transparent" height="500">
+                      <v-card-text class="text-center">
+                        <img src="/assets/Prospero.png" alt="Vuetify.js" height="220">
+                      </v-card-text>
+                      <v-card-title primary-title class="layout justify-center">
+                        <div class="headline text-center" v-text="porfolio3.name"></div>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio3.description">
+                      </v-card-text>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio3.tool">
+                      </v-card-text>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+                <v-layout row wrap align-center>
+                  <v-flex xs12 md6>
+                    <v-card flat class="transparent" height="500">
+                      <v-card-text class="text-center">
+                        <img src="/assets/tumensaje.png" alt="Vuetify.js" height="200">
+                      </v-card-text>
+                      <v-card-title primary-title class="layout justify-center">
+                        <div class="headline text-center" v-text="porfolio4.name"></div>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio4.description">
+                      </v-card-text>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio4.tool">
+                      </v-card-text>
+                    </v-card>
+                  </v-flex>
+                  <v-flex xs12 md6>
+                    <v-card flat class="transparent" height="500">
+                      <v-card-text class="text-center">
+                        <img src="/assets/medellinjs.png" alt="Vuetify.js" height="200">
+                      </v-card-text>
+                      <v-card-title primary-title class="layout justify-center">
+                        <div class="headline text-center" v-text="porfolio5.name"></div>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio5.description">
+                      </v-card-text>
+                      </v-card-title>
+                      <v-card-text v-text="porfolio5.tool">
+                      </v-card-text>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-flex>
+          </v-layout>
+        </section>
+
+        <section>
+          <v-parallax src="assets/section.jpg" height="380">
+            <v-layout column align-center justify-center>
+              <div class="headline white--text mb-4 text-center" v-text="Comunity.name" ></div>
+              <em v-text="Comunity.description"></em>
+              <v-btn class="mt-12" color="green lighten-2" dark large target="_black" href="https://twitter.com/node_co">
+                Twitter
+              </v-btn>
+            </v-layout>
+          </v-parallax>
+        </section>
+
+        <section>
+          <v-container grid-list-xl>
+            <v-layout row wrap justify-center class="my-12">
+              <v-flex xs12 sm4>
+                <v-card flat class="transparent">
+                  <v-card-title primary-title class="layout justify-center">
+                    <div class="headline">Frase</div>
+                  </v-card-title>
+                  <v-card-text>
+                    No fracasé, sólo descubrí 999 maneras de como no hacer una bombilla.
+                    <p>Thomas Alva Edison</p>
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm4 offset-sm1>
+                <v-card flat class="transparent">
+                  <v-card-title primary-title class="layout justify-center">
+                    <div class="headline">Contáctame</div>
+                  </v-card-title>
+                  <v-list class="transparent">
+                    <v-list-item>
+                      <v-list-item-action>
+                        <v-icon class="blue--text text--lighten-2">mdi-phone</v-icon>
+                      </v-list-item-action>
+                      <v-list-item-content>
+                        <v-list-item-title>313-672-3589</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                    <v-list-item>
+                      <v-list-item-action>
+                        <v-icon class="blue--text text--lighten-2">mdi-map-marker</v-icon>
+                      </v-list-item-action>
+                      <v-list-item-content>
+                        <v-list-item-title>Medellín, Colombia</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                    <v-list-item>
+                      <v-list-item-action>
+                        <v-icon class="blue--text text--lighten-2">mdi-email</v-icon>
+                      </v-list-item-action>
+                      <v-list-item-content>
+                        <v-list-item-title>silvermiguel96@gmail.com</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-list>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </section>
+
+        <v-footer color="blue darken-2">
+          <v-layout row wrap align-center>
+            <v-flex xs12>
+              <div class="white--text ml-4">
+                Made with
+                <v-icon class="red--text">mdi-heart</v-icon>
+                by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
+                and <a class="white--text" href="https://github.com/silvermiguel96">Silvermiguel96</a>
+              </div>
+            </v-flex>
+          </v-layout>
+        </v-footer>
+      </v-content>
+    </v-app>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data() {
+        return {
+          title: 'FullStack',
+          profile: {
+            name: "Miguelangel Rendón Cuartas",
+            description: "Desarrollador con conocimientos en Javascript, CSS, Html, Node JS, Vue JS, MongoDB, Nuxt.Js, Jest.Js, coorganizador de la comunidad NodeCo (NodeJS Colombia) ",
+            image: "https://pbs.twimg.com/profile_images/1080921959431585793/VAYTj3re_400x400.jpg"
+          },
+          porfolio1:
+          {
+            "name": "Salesavant",
+            "description": "Software enfocado en el manejo de información de las empresas de las cuales hacen parte de la misma, manipulación de perfiles de linkedin para medir resultados en cuanto  la inversión que se le realizó.",
+            "tool": "Vue.js, Vuex, VueRouter, Vuetify, Graphql, Python."
+          },
+          porfolio2:
+          {
+            "name": "Tenndy",
+            "description": "Software en busca de facilitar el manejo del dropshipping en colombia tanto como en adquirir los productos, realizar las comprar y el despacho de los productos estos están conectando con las API de Envia y Shopify.",
+            "tool": "Vue.js, Vuex, VueRouter, Vuetify, MongoDB, Express, Node.js."
+          },
+          porfolio3:
+          {
+            "name": "Prospero",
+            "description": "Landing page para el lanzamiento del libro Dinero, felicidad, tiempo de próspero.",
+            "tool": "React, NextJs."
+          },
+          porfolio4:
+          {
+            "name": "Tumensaje",
+            "description": "Landing page donde puedes conocer más sobre la aplicacion de tumensaje.co esta tiene responsive design.",
+            "tool": "React, NextJs."
+          },
+          porfolio5:
+          {
+            "name": "Medellinjs",
+            "description": "Aporte en mejorar la landing page de la comunidad MedellinJs en el aspecto de los sponsors.",
+            "tool": "Vue, Nuxt.js"
+          },
+          Comunity: {
+            "name": "NodeCo - NodeJS Colombia + NodeJS Medellín",
+            "description": "De la comunidad NodeJS Colombia + NodeJS Medellín para la comunidad. 💚 "
+          }
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
